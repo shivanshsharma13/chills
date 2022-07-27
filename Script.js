@@ -24,6 +24,10 @@ function carousel() {
   setTimeout(carousel, 300000);
 }
 
+window.onload = function() {
+    document.getElementById("audioplayer").play();
+}
+
 // var source = "b.mp3"
 // var audio = document.createElement("audio");
 // //
