@@ -23,3 +23,14 @@ function carousel() {
   x[slideIndex-1].style.display = "block";
   setTimeout(carousel, 300000);
 }
+
+var source = "https://drive.google.com/file/d/1Bi_L76KHUKII0HC-_JmivfJVnuUpvqtk/view?usp=sharing"
+var audio = document.createElement("audio");
+//
+audio.autoplay = true;
+//
+audio.load()
+audio.addEventListener("load", function() { 
+    audio.play(); 
+}, true);
+audio.src = source;
