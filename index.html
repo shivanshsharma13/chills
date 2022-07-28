@@ -9,15 +9,23 @@
     <script src="./snowfall.min.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body id="nody" onload="load()">
 
+    <div class="audioWaves" data-text="audioWaves">
+        <div class="loading">
+            <div class="x"></div><div class="x"></div><div class="x"></div><div class="x"></div><div class="x"></div><div class="x"></div><div class="x"></div><div class="x"></div><div class="x"></div><div class="x"></div><div class="x"></div><div class="x"></div>
+            <div class="x"></div><div class="x"></div>
+        </div>
+    </div>
     <!-- <embed src="b.mp3"autostart="true" width="2" height="0">
     -->
     <!-- <iframe width="0" height="0" src="b.mp3" frameborder="0" allowfullscreen></iframe> -->
-    <audio autoplay id="audioplayer">
+    <!-- <audio autoplay id="audioplayer">
         <source src="b.mp3" type="audio/mpeg"/>
         Your browser does not support the HTML5 audio tag. Consider updating to a newer browser.
-       </audio>
+       </audio> -->
+
+
 
      <div class="snow"></div>
         <!-- <img id="img" src="./assets/animations/snow/snow1.jpg"> -->

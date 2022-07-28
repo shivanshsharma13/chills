@@ -104,37 +104,120 @@ bottom: 0;
     animation-delay: 1.2s;
   }
   
-  /* .star:nth-child(2)::before, .star:nth-child(2)::after{
-    animation-delay: 1.2s;
-  } */
-/*   
-  .star:nth-child(3){
-    top: calc(50% - 0px);
-    left: calc(50% - 150px);
-    animation-delay: 1.4s;
+  .audioWaves {
+  cursor: pointer;
+  position: absolute;
+  bottom: 100px;
+  left: 700px;
+  z-index: 1;
+  transition: 0.5s ease;
+}
+
+.loading {
+  width: 100px;
+  height: 30px;
+  position: relative;
+}
+
+.loading .x {
+  position: absolute;
+  box-shadow: 0 0 0vw 0vw rgb(25, 89, 191);
+  animation: loading 2s ease-in-out infinite, flash1 6s ease infinite;
+  width: 5px;
+  background-color: #4e4355;
+  height: 5px;
+  transition: 0.8s ease-in;
+}
+
+@keyframes loading {
+  0%, 100% {
+    top: 0px;
   }
-  
-  .star:nth-child(3)::before, .star:nth-child(3)::after{
-    animation-delay: 1.4s;
+  25% {
+    top: 15px;
   }
-  
-  .star:nth-child(4){
-    top: calc(50% - -50px);
-    left: calc(50% - 200px);
-    animation-delay: 1.6s;
+  50% {
+    top: 0px;
   }
-  
-  .star:nth-child(4)::before, .star:nth-child(4)::after{
-    animation-delay: 1.6s;
+  75% {
+    top: 15px;
   }
-  
-  .star:nth-child(5){
-    top: calc(50% - -100px);
-    left: calc(50% - 250px);
-    animation-delay: 1.8s;
+}
+@keyframes flash1 {
+  0%, 100% {
+    box-shadow: 0 0 0vw 0vw rgb(25, 89, 191);
   }
-  
-  .star:nth-child(5)::before, .star:nth-child(5)::after{
-    animation-delay: 1.8s;
-  } */
-        
+  5%, 30% {
+    opacity: 1;
+    box-shadow: 0 0 2vw 0.2vw rgb(25, 89, 191);
+  }
+}
+.loading .x:nth-child(1) {
+  left: 0px;
+  animation-delay: 0s;
+}
+
+.loading .x:nth-child(2) {
+  left: 5px;
+  animation-delay: 0.1s;
+}
+
+.loading .x:nth-child(3) {
+  left: 10px;
+  animation-delay: 0.2s;
+}
+
+.loading .x:nth-child(4) {
+  left: 15px;
+  animation-delay: 0.3s;
+}
+
+.loading .x:nth-child(5) {
+  left: 20px;
+  animation-delay: 0.4s;
+}
+
+.loading .x:nth-child(6) {
+  left: 25px;
+  animation-delay: 0.5s;
+}
+
+.loading .x:nth-child(7) {
+  left: 30px;
+  animation-delay: 0.6s;
+}
+
+.loading .x:nth-child(8) {
+  left: 35px;
+  animation-delay: 0.7s;
+}
+
+.loading .x:nth-child(9) {
+  left: 40px;
+  animation-delay: 0.8s;
+}
+
+.loading .x:nth-child(10) {
+  left: 45px;
+  animation-delay: 0.9s;
+}
+
+.loading .x:nth-child(11) {
+  left: 50px;
+  animation-delay: 1s;
+}
+
+.loading .x:nth-child(12) {
+  left: 55px;
+  animation-delay: 1.1s;
+}
+
+.loading .x:nth-child(13) {
+  left: 60px;
+  animation-delay: 1.2s;
+}
+
+.loading .x:nth-child(14) {
+  left: 65px;
+  animation-delay: 1.3s;
+}
